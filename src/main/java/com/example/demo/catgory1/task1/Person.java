@@ -26,12 +26,12 @@ public class Person {
         this . age = age ;
     }
     public static void main ( String [] args ) {
-        Factory<Person> personFactory = new Factory<>();
+        Factory<Person> personFactory = new Factory<Person>();
         Person person = personFactory.create(Person.class);
         System.out.println(person);
 
 
-        Factory<Student> studentFactory = new Factory<>();
+        Factory<Student> studentFactory = new Factory<Student>();
         Student student = studentFactory.create(Student.class);
         System.out.println(student);
     }
